@@ -137,6 +137,7 @@ eval /home/tomo/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 
 # Add new PATH
 set PATH /home/tomo/.local/bin $PATH
+set -gx PATH /home/tomo/.cargo/bin $PATH
 # ghcup-env
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 test -f /home/tomo/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /home/tomo/.ghcup/bin $PATH
@@ -145,3 +146,5 @@ test -f /home/tomo/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /home/tomo/.gh
 # Authentication 
 alias get-git-token='xclip -sel c < ~/Codes/personal-access-token.txt'
 
+# >>> Update mirrorlist 
+alias update-mirrorlist='sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
