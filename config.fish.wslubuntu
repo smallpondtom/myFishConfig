@@ -153,3 +153,4 @@ set PATH /home/smallpondtom/.nvm/versions/node/v15.8.0/bin $PATH
 
 # Create alias to move to home dir
 alias gohome="cd /mnt/c/Users/Tomo"
+alias ls="ls -la"
