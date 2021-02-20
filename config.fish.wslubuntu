@@ -150,7 +150,15 @@ logo
 
 # Set node as path
 set PATH /home/smallpondtom/.nvm/versions/node/v15.8.0/bin $PATH
+set PATH /home/smallpondtom/.cargo/bin $PATH
 
 # Create alias to move to home dir
 alias gohome="cd /mnt/c/Users/Tomo"
 alias ls="ls -la"
+
+# Changing "ls" to "exa"
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+
