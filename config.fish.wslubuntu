@@ -113,7 +113,14 @@ alias egrep='egrep --color=auto'
 ## Run neofetch if session is interactive and ASCII message
 if status --is-interactive 
    neofetch 
-   toilet "Let's Code"
+   # toilet "Let's Code"
+   
+   echo  ' ████████╗ ██████╗ ███╗   ███╗ ██████╗      ██████╗ ██████╗ ██████╗ ███████╗'
+   echo  ' ╚══██╔══╝██╔═══██╗████╗ ████║██╔═══██╗    ██╔════╝██╔═══██╗██╔══██╗██╔════╝ '
+   echo  '    ██║   ██║   ██║██╔████╔██║██║   ██║    ██║     ██║   ██║██║  ██║█████╗  '
+   echo  '    ██║   ██║   ██║██║╚██╔╝██║██║   ██║    ██║     ██║   ██║██║  ██║██╔══╝  '
+   echo  '    ██║   ╚██████╔╝██║ ╚═╝ ██║╚██████╔╝    ╚██████╗╚██████╔╝██████╔╝███████╗'
+   echo  '    ╚═╝    ╚═════╝ ╚═╝     ╚═╝ ╚═════╝      ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ '
 end 
 
 ## Add $PATH for powerline 
@@ -125,6 +132,7 @@ set PATH $HOME/.local/bin $PATH
 eval /home/smallpondtom/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 set PATH /home/smallpondtom/anaconda3/bin $PATH
+
 
 ## Print out the fish logo
 function logo
